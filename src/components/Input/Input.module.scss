@@ -1,0 +1,24 @@
+.Input {
+  background-color: var(--background-color-input);
+  box-shadow: inset 0 0 0 2px var(--border-color-input);
+  border-radius: 3px;
+  padding: 8px 12px;
+  width: 100%;
+  color: var(--color-main);
+  border: none;
+
+  &:focus {
+	box-shadow: inset 0 0 0 2px var(--border-color-input-focused);
+  }
+
+  &:hover {
+	background-color: var(--background-color-input-hovered);
+	box-shadow: inset 0 0 0 2px #a6c5e229;
+  }
+
+
+}
+
+.focused {
+  box-shadow: inset 0 0 0 2px var(--border-color-input-focused);
+}

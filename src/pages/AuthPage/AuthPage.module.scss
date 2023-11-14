@@ -1,0 +1,10 @@
+.AuthPage{
+  background-image: url("../../assets/back.jpg");
+  width: 100%;
+  height: 100vh;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
