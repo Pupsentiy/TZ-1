@@ -1,9 +1,5 @@
-import { cls } from "@/utils/helpers/cls/cls";
-import {
-  type ChangeEvent,
-  type InputHTMLAttributes,
-  memo,
-} from "react";
+import { cls } from "@/utils/helpers/cls/cls.ts";
+import { type ChangeEvent, type InputHTMLAttributes, memo } from "react";
 import styles from "./Input.module.scss";
 
 type HTMLInputProps = Omit<
@@ -26,7 +22,6 @@ export const Input = memo((props: InputProps) => {
     placeholder,
     ...otherProps
   } = props;
-
 
   const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
     onChange?.(event.target.value);
