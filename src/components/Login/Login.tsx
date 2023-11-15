@@ -29,7 +29,7 @@ export interface SignInForm {
 
 const loginSchema = yup.object({
   email: yup.string().email("Invalid email format").required().trim(),
-  password: yup.string().required(),
+  password: yup.string().min(8, "must be at least 8 characters").required(),
 });
 
 export const Login = memo(
